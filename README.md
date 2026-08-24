@@ -1,7 +1,3 @@
-Yep 👍 We should make the README **actually usable by someone who clones the GitHub repo from scratch**.
-
-Add/replace the setup section with this more complete version:
-
 ````markdown
 # 🧠 AI Socratic Tutor
 
@@ -956,8 +952,7 @@ http://localhost:8000/docs
 ````
 
 ### One important GitHub note
-
-Since your project is meant to be **cloned by other people**, make sure your repository contains:
+make sure your repository contains:
 
 ```text
 requirements.txt
