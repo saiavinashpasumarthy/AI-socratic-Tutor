@@ -1,8 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import Base, engine
+from app.models.session import Session
+from app.models.message import Message
 
 from app.routes.tutor import router as tutor_router
 
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI Socratic Tutor API",
